@@ -111,10 +111,11 @@ GET http://localhost:6500/mycode
 
 | Status Code | Reason |
 |---|---|
-| 400 | URL is required |
-| 400 | Custom code already exists |
+| 301 | Site is redirected |
+| 400 | Bad request |
 | 404 | Short code not found |
 | 500 | Internal server error |
+
 
 ## Notes
 

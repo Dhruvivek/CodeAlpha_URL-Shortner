@@ -41,7 +41,7 @@ export const redirectURL = async (req, res) => {
             return res.status(404).json({ message: "Url not found" });
         }
         else {
-            res.redirect(url.url);
+            res.status(301).redirect(url.url),json({message:"Url found and redirected"});
         }
     }
     catch (error) {
